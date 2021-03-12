@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="main.js"></script>
+</head>
+<body onload="start()">
+    <nav>
+       <ul>
+            <li><a href="index.html">Notes App</a></li>
+       </ul> 
+    </nav>
+    <div class="content">
+        <div class="sub-header">
+            <button onclick="ShowModal('addNoteModal');" id="addNote">+ Add Note</button>
+        </div>
+        <div class="sub-content">
+            
+        </div>
+    </div>
+
+    <!-- Add note Modal -->
+    <div id="addNoteModal">
+        <button onclick="HideModal('addNoteModal');" class="close-button" id="closeAddModal">&times;</button>
+        <h1>Add note</h1>
+        <input id="name" placeholder="Name" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input id="file" type="file">
+        <div class="time-date">
+            <input type="date" id="date" name="trip-start" value="2018-07-22" min="2020-01-01" max="2030-12-31">
+            <input type="time" id="time" name="appt" min="00:00" max="23:59" required>
+        </div>
+        <button onclick="AddNote()" id="addNoteButton">Add Note</button>
+    </div>
+
+    <!-- Edit note Modal -->
+    <!--<div id="editNoteModal">
+        <button onclick="HideModal('addNoteModal');" class="close-button" id="closeAddModal">&times;</button>
+        <h1>Add note</h1>
+        <input id="name" placeholder="Name">
+        <textarea id="description" placeholder="Description"></textarea>
+        <button id="addFilesButton">+ Add Files</button>
+        <div class="time-date">
+            <input type="date" id="date" name="trip-start" value="2018-07-22" min="2020-01-01" max="2030-12-31">
+            <input type="time" id="time" name="appt" min="09:00" max="18:00" required>
+        </div>
+        <button id="addNoteButton">Add Note</button>
+    </div>-->
+
+</body>
+</html>

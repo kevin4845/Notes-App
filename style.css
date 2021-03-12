@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    font-family: 'Montserrat';
+}
+
+nav {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+.content {
+    margin: 0 350px;
+    background: rgb(87, 87, 87);
+}
+
+.sub-header {
+    background: rgb(87, 87, 87);
+    padding: 9px;
+}
+
+button {
+    padding: 8px 13px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+
+.sub-content {
+    background: rgb(44, 44, 44);
+    min-height: 500px;
+}
+
+#addNoteModal {
+    position: absolute;
+    background-color: grey;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+    box-shadow: 0px 0px 0px 500px rgba(0,0,0,0.50);
+}
+
+#addNoteModal h1 {
+    text-align: center;
+}
+
+input {
+    font-size: 20px;
+    width: 100%;
+    padding: 2px;
+    border: none;
+}
+
+#description {
+    width: 100%;
+    resize: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    margin-top: 15px;
+    border: none;
+    height: 350px;
+    
+}
+
+#date {
+    width: 250px;
+}
+
+#time {
+    width: 250px
+}
+
+.time-date {
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+    /*transform: translate(-50%, -50%);*/
+}
+
+#addNoteButton {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#file {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
